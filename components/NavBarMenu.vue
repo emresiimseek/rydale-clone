@@ -32,6 +32,7 @@
   button {
     @apply text-[20px] italic;
     font-family: "Droid";
+    font-family: "Droid";
   }
 }
 
@@ -40,6 +41,6 @@
 }
 
 .dropdown:hover .dropdown-content {
-  @apply block absolute left-0 right-0 min-w-full border-t-[1px] mt-4;
+  @apply block absolute left-0 right-0 min-w-full  border-t-[1px] mt-4;
 }
 </style>

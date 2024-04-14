@@ -1,6 +1,6 @@
 <template>
   <div class="navbar-container">
-    <div class="max-tablet:block hidden">
+    <div class="max-laptop:flex hidden">
       <button
         class="relative w-10 h-8 hover:text-black items-center justify-center flex z-50 text-gray-800"
       >
@@ -15,12 +15,12 @@
     <img
       src="../assets/images/header_logo.svg"
       width="112px"
-      class="flex-[0.1] max-tablet:mr-auto max-laptop:absolute"
+      class="flex-[0.1] mx-auto"
       height="45px"
     />
 
     <NavBarMenu />
-    <div class="flex-[0.8] items-center max-desktop:hidden">
+    <div class="flex-[0.8] items-center max-laptop:hidden relative">
       <input
         type="text"
         id="name"
@@ -30,12 +30,12 @@
       <font-awesome-icon
         icon="magnifying-glass"
         size="lg"
-        class="-translate-x-[2vw] absolute translate-y-[0.5vw]"
+        class="-translate-x-[2vw] absolute translate-y-[0.5vw] max-desktop:translate-y-[0.8vw] max-desktop:-translate-x-[3vw]"
         color="#424242"
       />
     </div>
 
-    <NavBarDelivery class="max-desktop:invisible" />
+    <NavBarDelivery class="max-laptop:hidden" />
     <div class="flex">
       <button
         class="relative w-10 h-8 hover:text-black items-center justify-center flex z-50 text-gray-800"
@@ -53,6 +53,6 @@
 </template>
 <style>
 .navbar-container {
-  @apply bg-white z-30  max-tablet:pl-0 max-tablet:p-0 pr-8 pl-8 top-0 fixed h-16 flex-shrink-0 flex-grow-0 flex items-center w-full max-laptop:justify-around;
+  @apply bg-white z-30   pr-8 pl-8 max-laptop:pl-0 max-laptop:pr-0 top-0 fixed h-16 flex-shrink-0 flex-grow-0 flex items-center w-full max-laptop:justify-between;
 }
 </style>
