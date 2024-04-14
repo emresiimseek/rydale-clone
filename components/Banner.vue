@@ -7,9 +7,9 @@
     </div>
 
     <div class="buttons">
-      <NuxtLink to="/about" class="action-button"> LADIES </NuxtLink
-      ><NuxtLink to="/about" class="action-button"> MEN’S </NuxtLink
-      ><NuxtLink to="/about" class="action-button"> KID’S </NuxtLink>
+      <NuxtLink to="/" class="action-button"> LADIES </NuxtLink
+      ><NuxtLink to="/" class="action-button"> MEN’S </NuxtLink
+      ><NuxtLink to="/" class="action-button"> KID’S </NuxtLink>
     </div>
   </div>
 </template>
