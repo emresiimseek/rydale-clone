@@ -4,16 +4,12 @@
       <button
         class="relative w-10 h-8 hover:text-black items-center justify-center flex z-50 text-gray-800"
       >
-        <font-awesome-icon icon="fa-solid fa-bars" size="lg" color="#424242" />
+        <font-awesome-icon icon="bars" size="lg" color="#424242" />
       </button>
       <button
         class="relative w-10 h-8 hover:text-black items-center justify-center flex z-50 text-gray-800"
       >
-        <font-awesome-icon
-          icon="fa-solid fa-magnifying-glass"
-          size="lg"
-          color="#424242"
-        />
+        <font-awesome-icon icon="magnifying-glass" size="lg" color="#424242" />
       </button>
     </div>
     <img
@@ -32,7 +28,7 @@
         class="bg-[#f1f1f1] w-full rounded-2xl italic font-thin pt-2 pb-2 indent-5 outline-none"
       />
       <font-awesome-icon
-        icon="fa-solid fa-magnifying-glass"
+        icon="magnifying-glass"
         size="lg"
         class="-translate-x-[2vw] absolute translate-y-[0.5vw]"
         color="#424242"
@@ -44,17 +40,13 @@
       <button
         class="relative w-10 h-8 hover:text-black items-center justify-center flex z-50 text-gray-800"
       >
-        <font-awesome-icon icon="fa-solid fa-heart" size="lg" color="#424242" />
+        <font-awesome-icon icon="heart" size="lg" color="#424242" />
       </button>
       <button class="relative w-10 h-8 max-desktop:hidden">
-        <font-awesome-icon icon="fa-solid fa-user" size="lg" color="#424242" />
+        <font-awesome-icon icon="user" size="lg" color="#424242" />
       </button>
       <button class="relative w-10 h-8">
-        <font-awesome-icon
-          icon="fa-solid fa-shopping-bag"
-          size="lg"
-          color="#424242"
-        />
+        <font-awesome-icon icon="shopping-bag" size="lg" color="#424242" />
       </button>
     </div>
   </div>
