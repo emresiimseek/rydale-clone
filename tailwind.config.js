@@ -10,4 +10,8 @@ module.exports = {
     },
   },
   plugins: [],
+  modules: ["@nuxtjs/google-fonts"],
+  fontFamily: {
+    sans: ["Lato, sans-serif"],
+  },
 };
