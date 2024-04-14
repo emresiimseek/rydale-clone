@@ -20,4 +20,10 @@ export default {
 .reset-body {
   @apply m-0;
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #292929 transparent;
+  box-sizing: border-box;
+}
 </style>

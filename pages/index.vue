@@ -1,3 +1,4 @@
 <template>
   <Banner />
+  <ShopEasterOffers />
 </template>

@@ -5,7 +5,6 @@
       <div class="middle-text">50% OFF</div>
       <div class="subtitle">SELECTED LINES</div>
     </div>
-
     <div class="buttons">
       <NuxtLink to="/" class="action-button"> LADIES </NuxtLink
       ><NuxtLink to="/" class="action-button"> MEN’S </NuxtLink
@@ -13,62 +12,65 @@
     </div>
   </div>
 </template>
-<style>
+<style scoped>
 .banner {
-  @apply relative flex flex-col justify-center items-center h-[33vw] w-full bg-[#20414b] bg-contain bg-no-repeat bg-bottom bg-[url('../assets/images/banner.avif')] mt-16;
+  @apply relative flex flex-col justify-center items-center h-[33vw]  max-tablet:h-[120vw] w-full bg-[#20414b] bg-contain bg-no-repeat bg-bottom max-tablet:bg-[url('../assets/images/banner-mobile.avif')] bg-[url('../assets/images/banner.avif')] max-tablet:pb-[25vw] mt-16;
 }
 
 .banner-content {
   @apply relative flex flex-col text-center text-lg text-white 
-         gap-[5px]
-         tablet:gap-7 
-         laptop:gap-[5vw] 
+         gap-[5vw]
+         max-laptop:gap-[3vw]
+         max-tablet:gap-[60px]
          -translate-y-[4vw];
 }
 
 .title {
-  @apply relative text-white tracking-[800] 
-         mobile:text-[1.5vw] 
-         tablet:text-[1.2vw] 
-         laptop:text-[1.35vw]
-         text-[16px];
+  @apply relative text-white tracking-[3px] 
+         text-[1.35vw]
+         max-tablet:text-[4vw];
 }
 
 .middle-text {
   @apply text-white tracking-wide 
-         text-[8vw] 
+  text-[8vw] 
          desktop:text-[7.5vw] 
-         desktop:-tracking-tighter;
+         desktop:-tracking-tighter max-tablet:text-[20vw] max-tablet:tracking-[3px];
+
   font-weight: bolder;
 }
 
 .subtitle {
   @apply text-[1.5vw] 
-         desktop:text-[1.35vw] 
-         desktop:mb-[2vw] 
-         desktop:tracking-wider;
+        max-tablet:text-[4.2vw]
+        mb-[2vw]
+        max-tablet:mb-[10vw]
+        tracking-[3px];
 }
 
 .buttons {
-  @apply gap-[1vw] flex;
+  @apply gap-[1vw] max-tablet:gap-[3vw] flex;
 }
 
 .action-button {
-  @apply bg-[#f5b129] rounded 
+  @apply bg-[#f5b129] rounded-lg
+          max-laptop:rounded
+         max-tablet:text-[3.5vw]
+         max-tablet:pt-[1.75vw]
+         max-tablet:pb-[1.75vw]
+         max-tablet:pr-[8vw]
+         max-tablet:pl-[8vw]
          font-black 
-         tracking-widest 
          uppercase 
          text-[1.25vw] 
-         desktop:text-[1.25vw] 
          text-[#20414b] 
          pt-[.5vw] 
          pb-[.5vw] 
          pr-[2.75vw] 
          pl-[2.75vw] 
-         desktop:font-black 
          transition ease-in-out delay-200 
          hover:transition-all 
          hover:scale-110 
-         -translate-y-[4vw];
+         -translate-y-[4vw] max-tablet:font-[600];
 }
 </style>
