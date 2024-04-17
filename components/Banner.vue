@@ -11,10 +11,10 @@
       ><NuxtLink to="/" class="action-button"> KID’S </NuxtLink>
     </div>
   </div>
-</template>
+</template>s
 <style scoped>
 .banner {
-  @apply relative flex flex-col justify-center items-center h-[33vw]  max-tablet:h-[120vw] w-full bg-[#20414b] bg-contain bg-no-repeat bg-bottom max-tablet:bg-[url('../assets/images/banner-mobile.avif')] bg-[url('../assets/images/banner.avif')] max-tablet:pb-[25vw] mt-16;
+  @apply relative flex flex-col justify-center items-center h-[33vw]  max-tablet:h-[120vw] w-full bg-[#20414b] bg-contain bg-no-repeat bg-bottom max-tablet:bg-[url('../assets/images/banner-mobile.png')] bg-[url('../assets/images/banner.png')] max-tablet:pb-[25vw] mt-16;
 }
 
 .banner-content {
