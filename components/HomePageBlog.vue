@@ -58,7 +58,7 @@
               />
               <p class="p-2 text-sm">
                 <span>
-                  {{ $t("Dog Friendly Beaches in Norfolk ") }}
+                  {{ $t("Dog Friendly Beaches in Norfolk") }}
                 </span>
                 <span>&gt;</span>
               </p>
