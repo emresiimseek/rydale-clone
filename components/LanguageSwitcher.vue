@@ -1,7 +1,12 @@
 <template>
   <div class="relative">
     <button href="#" class="flex items-center" @click="toggleVisibility">
-      <NuxtPicture :src="`/flag_${$i18n.locale}.png`" width="23" height="23" />
+      <NuxtPicture
+        :src="`/flag_${$i18n.locale}.png`"
+        width="23"
+        height="23"
+        class="lang_img"
+      />
     </button>
 
     <ul
@@ -16,7 +21,12 @@
           @click.prevent="setLocale('en')"
           class="flex items-center px-3 py-3 hover:bg-gray-200 border-b-[1px]"
         >
-          <NuxtPicture src="/flag_en.png" width="23" height="23" />
+          <NuxtPicture
+            src="/flag_en.png"
+            width="23"
+            height="23"
+            class="lang_img"
+          />
           <span class="ml-1">EN</span>
         </a>
 
@@ -25,7 +35,12 @@
           @click.prevent="setLocale('fr')"
           class="flex items-center px-3 py-3 hover:bg-gray-200"
         >
-          <NuxtPicture src="/flag_fr.png" width="23" height="23" />
+          <NuxtPicture
+            src="/flag_fr.png"
+            width="23"
+            height="23"
+            class="lang_img"
+          />
           <span class="ml-1">FR</span>
         </a>
       </li>
@@ -56,3 +71,8 @@ const hideDropdown = () => {
   isVisible.value = false;
 };
 </script>
+<style>
+.lang_img > img {
+  @apply rounded-[50%];
+}
+</style>
