@@ -4,15 +4,17 @@
       <div class="flex flex-wrap flex-[1]">
         <div class="w-full flex flex-col justify-center items-center mt-8">
           <h2>
-            <span class="text-center font-medium text-3xl font-serif"
-              >Rydale Life</span
-            >
+            <span class="text-center font-medium text-3xl font-serif">
+              {{ $t("Rydale Life") }}
+            </span>
           </h2>
           <div class="w-10 border border-gray-300 my-2"></div>
           <p class="text-center italic font-light mb-2 text-lg">
-            Great reads from our blog
+            {{ $t("Great reads from our blog") }}
           </p>
-          <NuxtLink to="/" class="underline"> See All </NuxtLink>
+          <NuxtLink to="/" class="underline">
+            {{ $t("See All") }}
+          </NuxtLink>
         </div>
       </div>
 
@@ -32,7 +34,10 @@
                 placeholder
               />
               <p class="p-2 text-sm">
-                <span>5 Brunch Outfit Ideas</span> <span>&gt;</span>
+                <span>
+                  {{ $t("5 Brunch Outfit Ideas") }}
+                </span>
+                <span>&gt;</span>
               </p>
             </div>
           </NuxtLink>
@@ -52,7 +57,10 @@
                 placeholder
               />
               <p class="p-2 text-sm">
-                <span>Dog Friendly Beaches in Norfolk</span> <span>&gt;</span>
+                <span>
+                  {{ $t("Dog Friendly Beaches in Norfolk ") }}
+                </span>
+                <span>&gt;</span>
               </p>
             </div>
           </NuxtLink>
@@ -77,7 +85,9 @@
                 placeholder
               />
               <p class="p-2 text-sm">
-                <span>Don't forget to follow us on instagram</span>
+                <span>
+                  {{ $t("Don't forget to follow us on instagram") }}
+                </span>
                 <span>&gt;</span>
               </p>
             </div>
