@@ -10,8 +10,12 @@
     </NuxtImg>
 
     <div class="ml-4 leading-none whitespace-no-wrap flex-grow">
-      <div class="font-bold text-gray-600 uppercase">Free Delivery</div>
-      <div class="class=" text-sm italic>on orders over £60*</div>
+      <div class="font-bold text-gray-600 uppercase">
+        {{ $t("Free Delivery") }}
+      </div>
+      <div class="class=" text-sm italic>
+        {{ $t("on orders over £60*") }}
+      </div>
     </div>
   </div>
 </template>
