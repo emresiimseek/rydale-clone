@@ -58,8 +58,4 @@
 .navbar-container {
   @apply bg-white z-30   pr-8 pl-8 max-laptop:pl-0 max-laptop:pr-0 top-0 fixed h-16 flex-shrink-0 flex-grow-0 flex items-center w-full max-laptop:justify-between;
 }
-
-picture img {
-  @apply rounded-full;
-}
 </style>
