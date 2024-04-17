@@ -31,7 +31,7 @@
       <font-awesome-icon
         icon="magnifying-glass"
         size="lg"
-        class="-translate-x-[2vw] absolute translate-y-[0.5vw] max-desktop:translate-y-[0.8vw] max-desktop:-translate-x-[3vw]"
+        class="-translate-x-[2vw] absolute translate-y-[0.5vw] max-desktop:translate-y-[0.8vw] max-desktop:-translate-x-[3vw] min-[1500px]:translate-y-[0.2vw] min-[1500px]:-translate-x-[1.2vw]"
         color="#424242"
       />
     </div>
