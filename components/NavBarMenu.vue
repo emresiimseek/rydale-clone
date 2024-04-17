@@ -1,27 +1,37 @@
 <template>
   <div class="header-menu-container">
     <div class="dropdown">
-      <button class="dropbtn">Ladies</button>
+      <button class="dropbtn">
+        {{ $t("Ladies") }}
+      </button>
       <div class="dropdown-content">ladies</div>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn">Men's</button>
+      <button class="dropbtn">
+        {{ $t("Men's") }}
+      </button>
       <div class="dropdown-content">mens</div>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn">Children's</button>
+      <button class="dropbtn">
+        {{ $t("Children's") }}
+      </button>
       <div class="dropdown-content">childrens</div>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn">Accessories</button>
+      <button class="dropbtn">
+        {{ $t("Accessories") }}
+      </button>
       <div class="dropdown-content">accessories</div>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn">Pets</button>
+      <button class="dropbtn">
+        {{ $t("Pets") }}
+      </button>
       <div class="dropdown-content">pets</div>
     </div>
   </div>

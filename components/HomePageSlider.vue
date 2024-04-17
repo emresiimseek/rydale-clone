@@ -10,7 +10,7 @@
         class="slider_button"
         :class="{ active: selectedTab === 'ladies' }"
       >
-        Ladies
+        {{ $t("Ladies") }}
       </button>
       <button
         id="slider-mens-btn"
@@ -18,7 +18,7 @@
         class="slider_button"
         :class="{ active: selectedTab === 'mens' }"
       >
-        Men's
+        {{ $t("Men's") }}
       </button>
       <button
         id="slider-kids-btn"
@@ -26,7 +26,7 @@
         class="slider_button"
         :class="{ active: selectedTab === 'kids' }"
       >
-        Kid's
+        {{ $t("Kid's") }}
       </button>
     </div>
 
@@ -34,14 +34,9 @@
       class="flex overflow-hidden relative"
       style="justify-content: space-between"
     >
-      <div
-        class="pb-20 md:pb-0 absolute z-10 h-full md:hidden"
-        style="top: 0; left: 0"
-      ></div>
-
       <div class="mx-auto">
         <div class="text-center">
-          <carousel :breakpoints="breakpoints">
+          <carousel v-bind="{ itemsToShow: 1.9 }" :breakpoints="breakpoints">
             <slide v-for="item in currentItems" :key="item.id">
               <NuxtLink :to="item.link">
                 <div
@@ -58,15 +53,15 @@
                   />
                 </div>
                 <div class="mt-4">
-                  <span class="text-center hover:underline pt-4">{{
-                    item.label
-                  }}</span>
+                  <span class="text-center hover:underline pt-4">
+                    {{ $t(item.label) }}
+                  </span>
                 </div>
               </NuxtLink>
             </slide>
 
             <template #addons>
-              <navigation class="desktop:invisible" />
+              <navigation />
             </template>
           </carousel>
         </div>

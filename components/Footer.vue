@@ -5,22 +5,34 @@
         <div class="w-1/2 px-2">
           <ul>
             <li>
-              <NuxtLink to="/"> About Rydale </NuxtLink>
+              <NuxtLink to="/">
+                {{ $t("About Rydale") }}
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/"> Careers at Rydale </NuxtLink>
+              <NuxtLink to="/">
+                {{ $t("Careers at Rydale") }}
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/"> Find a Stockist </NuxtLink>
+              <NuxtLink to="/">
+                {{ $t("Find a Stockist") }}
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/"> Shows & Events </NuxtLink>
+              <NuxtLink to="/">
+                {{ $t("Shows & Events") }}
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/"> Contact Rydale </NuxtLink>
+              <NuxtLink to="/">
+                {{ $t("Contact Rydale") }}
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="tel:01377337160">Tel: 01377 337160</NuxtLink>
+              <NuxtLink to="tel:01377337160">
+                {{ $t("Tel: 01377 337160") }}
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -29,25 +41,39 @@
             class="footer-menu text-15px min-w-140 ml-4 tracking-[.5px] leading-[1.75]"
           >
             <li>
-              <NuxtLink to="/"> Help & FAQ </NuxtLink>
+              <NuxtLink to="/">
+                {{ $t("Help & FAQ") }}
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/"> Returns & Refunds </NuxtLink>
+              <NuxtLink to="/">
+                {{ $t("Returns & Refunds") }}
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/"> Delivery Info </NuxtLink>
+              <NuxtLink to="/">
+                {{ $t("Delivery Info") }}
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/"> Terms & Conditions </NuxtLink>
+              <NuxtLink to="/">
+                {{ $t("Terms & Conditions") }}
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/"> Privacy Policy </NuxtLink>
+              <NuxtLink to="/">
+                {{ $t("Privacy Policy") }}
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/"> Choose Your Country or Region </NuxtLink>
+              <NuxtLink to="/">
+                {{ $t("Choose Your Country or Region") }}
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/"> Sitemap </NuxtLink>
+              <NuxtLink to="/">
+                {{ $t("Sitemap") }}
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -87,9 +113,10 @@
         class="w-1/3 max-laptop:w-full mb-4 px-3a max-laptop:text-center text-right order-1"
       >
         <h3>
-          Subscribe for your chance to
+          {{ $t("Subscribe for your chance to") }}
+
           <NuxtLink class="underline font-semibold">
-            win a £100 Gift Card!*
+            {{ $t("win a £100 Gift Card!*") }}
           </NuxtLink>
         </h3>
       </div>
@@ -99,7 +126,7 @@
     >
       <div class="flex items-center flex-grow">
         <div class="mt-4 text-xs tracking-wider max-laptop:mx-auto">
-          Copyright Rydale Country Clothing | YTC Ltd 3768619
+          {{ $t("Copyright Rydale Country Clothing | YTC Ltd 3768619") }}
         </div>
         <div
           class="flex justify-center flex-row ml-auto gap-2 max-laptop:hidden"

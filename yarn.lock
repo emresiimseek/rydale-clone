@@ -516,6 +516,27 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-3.0.6.tgz#c5e627475c10869a091280610c96411d18206f3a"
   integrity sha512-akrL7lTroyNpPkoHtvK2UpsMzJr6jXdHaQ0YdcwqDsB8jdwlpNHZYijpOUd9KJsARr+VB3WXY4EyObepqJ4ytQ==
 
+"@intlify/core-base@9.12.1":
+  version "9.12.1"
+  resolved "https://registry.yarnpkg.com/@intlify/core-base/-/core-base-9.12.1.tgz#910cdbf88ba2dec8d87e598b961c336e95132958"
+  integrity sha512-l7djJEmXLAR44PdtKDEBev/TN9tREQz967/+jvN3WtICqFoy2Cz8kPtjDfvZctqPNzOonp+ESsDCUm+rjHsmdA==
+  dependencies:
+    "@intlify/message-compiler" "9.12.1"
+    "@intlify/shared" "9.12.1"
+
+"@intlify/message-compiler@9.12.1":
+  version "9.12.1"
+  resolved "https://registry.yarnpkg.com/@intlify/message-compiler/-/message-compiler-9.12.1.tgz#68549cd2107fa72f07fd57de992f3bfcfbc3b1a4"
+  integrity sha512-6QrMGdqKUJSkctyg56nvE+h86tjQZTjYFEfx3ghQAXKPXUd1v5josZXrwnSbIEWWeAentlwtB5qW1FE5r2S8AQ==
+  dependencies:
+    "@intlify/shared" "9.12.1"
+    source-map-js "^1.0.2"
+
+"@intlify/shared@9.12.1":
+  version "9.12.1"
+  resolved "https://registry.yarnpkg.com/@intlify/shared/-/shared-9.12.1.tgz#78ca1e820fe44f47defab95b015524fdc3b14dcd"
+  integrity sha512-xAAAxaMS7yUCkwXwqUVQmGCPbXSm6oHqMzcqr2IrxJQmC0DmuqoaW0yBeWyd/pG03PPXqGtWhJLnefsiVElzAQ==
+
 "@ioredis/commands@^1.1.1":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@ioredis/commands/-/commands-1.2.0.tgz#6d61b3097470af1fdbbe622795b8921d42018e11"
@@ -1478,7 +1499,7 @@
     "@vue/compiler-dom" "3.4.21"
     "@vue/shared" "3.4.21"
 
-"@vue/devtools-api@^6.5.1":
+"@vue/devtools-api@^6.5.0", "@vue/devtools-api@^6.5.1":
   version "6.6.1"
   resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.6.1.tgz#7c14346383751d9f6ad4bea0963245b30220ef83"
   integrity sha512-LgPscpE3Vs0x96PzSSB4IGVSZXZBZHpfxs+ZA1d+VEPwHdOXowy/Y2CsvCAIFrf+ssVU1pD1jidj505EpUnfbA==
@@ -6362,6 +6383,15 @@ vue-devtools-stub@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/vue-devtools-stub/-/vue-devtools-stub-0.1.0.tgz#a65b9485edecd4273cedcb8102c739b83add2c81"
   integrity sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==
+
+vue-i18n@^9.12.1:
+  version "9.12.1"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-9.12.1.tgz#025a1228645125387506a7d05f9b872917d69f8c"
+  integrity sha512-cqkBt10YzxF3tNGA7/95VMfFdk8nEoguzB7K7R9rldiSnHyWeokq6GOWMThfK/siTr2lLfM9nqolD/er//t4Iw==
+  dependencies:
+    "@intlify/core-base" "9.12.1"
+    "@intlify/shared" "9.12.1"
+    "@vue/devtools-api" "^6.5.0"
 
 vue-observe-visibility@^2.0.0-alpha.1:
   version "2.0.0-alpha.1"

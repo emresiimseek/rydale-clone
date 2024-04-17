@@ -1,17 +1,26 @@
 <template>
   <div class="banner">
     <div class="banner-content">
-      <div class="title">EGG-CELLENT EASTER WITH UP TO</div>
-      <div class="middle-text">50% OFF</div>
-      <div class="subtitle">SELECTED LINES</div>
+      <div class="title">
+        {{ $t("EGG-CELLENT EASTER WITH UP TO") }}
+      </div>
+      <div class="middle-text">
+        {{ $t("50% OFF") }}
+      </div>
+      <div class="subtitle">
+        {{ $t("SELECTED LINES") }}
+      </div>
     </div>
     <div class="buttons">
-      <NuxtLink to="/" class="action-button"> LADIES </NuxtLink
-      ><NuxtLink to="/" class="action-button"> MEN’S </NuxtLink
-      ><NuxtLink to="/" class="action-button"> KID’S </NuxtLink>
+      <NuxtLink to="/" class="action-button"> {{ $t("LADIES") }} </NuxtLink
+      ><NuxtLink to="/" class="action-button"> {{ $t("MEN’S") }} </NuxtLink
+      ><NuxtLink to="/" class="action-button">
+        {{ $t("KID’S") }}
+      </NuxtLink>
     </div>
   </div>
-</template>s
+</template>
+s
 <style scoped>
 .banner {
   @apply relative flex flex-col justify-center items-center h-[33vw]  max-tablet:h-[120vw] w-full bg-[#20414b] bg-contain bg-no-repeat bg-bottom max-tablet:bg-[url('../assets/images/banner-mobile.png')] bg-[url('../assets/images/banner.png')] max-tablet:pb-[25vw] mt-16;

@@ -1,6 +1,8 @@
 <template>
   <div class="relative">
-    <h2 class="card-title">Shop Easter Offers</h2>
+    <h2 class="card-title">
+      {{ $t("Shop Easter Offers", { name: "Shop Easter Offers" }) }}
+    </h2>
     <div class="relative mx-auto grid-container max-w-[1500px] mt-10 mb-2">
       <div v-for="item in items" :key="item.price" class="flex-auto">
         <div v-if="item.bgImage" class="overflow-hidden relative">
@@ -23,7 +25,7 @@
             <button
               class="bg-white absolute bottom-[20px] w-[90%] text-[18px] p-3 left-[50%] text-center -translate-x-[50%] rounded-2xl font-extrabold transition ease-in-out delay-200 hover:transition-all hover:scale-105 max-laptop:text-[12px]"
             >
-              {{ item.buttonText }}
+              {{ $t(item.buttonText) }}
             </button>
           </a>
 
@@ -41,12 +43,12 @@
             <div
               class="text-[24px] text-[#20414b] tracking-[2px] font-[600] mb-[20px] max-laptop:text-[4vw] max-laptop:mb-[2vw]"
             >
-              {{ item.subtitle }}
+              {{ $t(item.subtitle) }}
             </div>
             <div
               class="tracking-[2px] text-[#20414b] font-[900] text-[64px] mb-[40px] max-laptop:text-[9vw] max-laptop:mb-[3vw]"
             >
-              {{ item.offText }}
+              {{ $t(item.offText) }}
             </div>
             <div
               class="text-[24px] text-[#20414b] tracking-[2px] font-[700] mb-[40px] max-laptop:text-[4vw] max-laptop:mb-[3vw]"
@@ -56,7 +58,7 @@
             <button
               class="bg-white absolute bottom-[20px] w-[90%] text-[18px] p-3 left-[50%] text-center -translate-x-[50%] rounded-2xl font-extrabold transition ease-in-out delay-200 hover:transition-all hover:scale-105 max-laptop:text-[12px]"
             >
-              {{ item.buttonText }}
+              {{ $t(item.buttonText) }}
             </button></a
           >
         </div>
