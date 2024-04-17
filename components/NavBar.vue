@@ -12,10 +12,11 @@
         <font-awesome-icon icon="magnifying-glass" size="lg" color="#424242" />
       </button>
     </div>
-    <img
-      src="../assets/images/header_logo.svg"
+
+    <NuxtPicture
+      src="/header_logo.svg"
+      format="svg"
       width="112px"
-      class="flex-[0.1] mx-auto"
       height="45px"
     />
 
@@ -25,7 +26,7 @@
         type="text"
         id="name"
         placeholder="Search"
-        class="bg-[#f1f1f1] w-full rounded-2xl italic font-thin pt-2 pb-2 indent-5 outline-none"
+        class="bg-[#f1f1f1] w-full rounded-2xl italic font-thin pt-2 pb-2 indent-5 outline-none placeholder:italic placeholder:text-sm"
       />
       <font-awesome-icon
         icon="magnifying-glass"

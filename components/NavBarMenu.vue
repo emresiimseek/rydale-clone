@@ -28,7 +28,7 @@
 </template>
 <style>
 .header-menu-container {
-  @apply flex justify-evenly flex-[3] max-laptop:hidden;
+  @apply flex justify-start flex-[3] max-laptop:hidden gap-20 ml-20;
   button {
     @apply text-[20px] italic;
     font-family: "Droid";

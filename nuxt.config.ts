@@ -2,7 +2,15 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["@fortawesome/fontawesome-svg-core/styles.css"],
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: [
+    "@nuxt/image",
+    "@nuxtjs/tailwindcss",
+    "vue3-carousel-nuxt",
+    "vue3-carousel-nuxt",
+  ],
+  image: {
+    format: ["avif", "gif", "webp"],
+  },
   build: {
     transpile: [
       "@fortawesome/vue-fontawesome",
