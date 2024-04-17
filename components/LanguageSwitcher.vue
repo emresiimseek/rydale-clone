@@ -73,6 +73,6 @@ const hideDropdown = () => {
 </script>
 <style>
 .lang_img > img {
-  @apply rounded-[50%];
+  @apply rounded-[50%] !h-[23px];
 }
 </style>
