@@ -5,6 +5,12 @@ export default defineNuxtConfig({
   modules: ["@nuxt/image", "@nuxtjs/tailwindcss", "vue3-carousel-nuxt"],
   image: {
     format: ["avif", "gif", "webp"],
+    screens: {
+      sm: 480,
+      md: 640,
+      lg: 1024,
+      xl: 1280,
+    },
   },
   build: {
     transpile: [

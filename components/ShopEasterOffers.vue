@@ -14,11 +14,12 @@
                 v-if="item.bgImage"
                 format="jpg"
                 loading="lazy"
-                width="369"
-                height="492"
+                width="100%"
+                height="100%"
                 :src="item.bgImage"
                 :alt="item.buttonText"
                 :placeholder="[369, 492, 50, 5]"
+                sizes="100vw xs:230px sm:345px md:301px lg:369px"
               />
             </div>
 
@@ -167,6 +168,6 @@ const items = ref([
 }
 
 .grid-container {
-  @apply grid grid-cols-4 gap-2 max-laptop:grid-cols-2;
+  @apply grid  gap-2  max-tablet:grid-cols-2 max-laptop:grid-cols-3 grid-cols-4;
 }
 </style>
