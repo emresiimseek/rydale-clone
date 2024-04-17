@@ -18,7 +18,7 @@
                 height="492"
                 :src="item.bgImage"
                 :alt="item.buttonText"
-                :placeholder="[369, 492]"
+                :placeholder="[369, 492, 50, 5]"
               />
             </div>
 
